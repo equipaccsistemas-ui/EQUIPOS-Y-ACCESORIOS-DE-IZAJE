@@ -11,6 +11,34 @@
 
  
 <style>
+
+.contact-float{
+    position:fixed;
+    right:20px;
+    bottom:100px;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#005BBB;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    line-height:1.1;
+    font-size:13px;
+    font-weight:600;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    z-index:9999;
+    transition:.3s;
+}
+
+.contact-float:hover{
+    transform:scale(1.08);
+}
+	
+
 .qr-section{
     margin-top:40px;
 }
@@ -586,6 +614,11 @@ body::before{
    href="https://wa.me/525613665845"
    target="_blank">
    💬
+</a>
+<a class="contact-float"
+   href="#"
+   onclick="descargarVCF()">
+   Añadir<br>Contacto
 </a>
 
 </body>
